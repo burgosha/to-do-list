@@ -9,6 +9,13 @@ html, body {
   font-family: Lato, sans-serif;
   margin-top: 40px;
 }
+h1 {
+  color: #1b1b32;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 20px 0;
+}
 .App {
   display: flex;
   flex-wrap: wrap;
