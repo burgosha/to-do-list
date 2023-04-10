@@ -19,6 +19,11 @@
     align-items: center;
     overflow-wrap: anywhere;
 }
+.tarea-contenedor-iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .tarea-icono {
     width: 25px;
     height: 25px;
