@@ -1,4 +1,5 @@
 import React from "react";
+import "../Stylesheets/TareaFormulario.css"
 
 function TareaFormulario(props) {
     return(
