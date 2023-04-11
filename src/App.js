@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div className='tareas-lista-principal'>
         <h1>Mis Tareas</h1>
-        <Tarea texto="Ejemplo de texto"/>
+        <Tarea texto="Ejemplo de texto" completada={true}/>
       </div>
     </div>
   );
