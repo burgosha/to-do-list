@@ -9,6 +9,11 @@ function ListaDeTareas() {
     // Incialmente tareas es un arreglo vacío (estado inicial)
     const [tareas, setTareas] = useState([]);
 
+    const agregarTarea = tarea => {
+        console.log("Tarea agregada");
+        console.log(tarea);
+    }
+
     return(
         <>
             <TareaFormulario />
