@@ -26,6 +26,18 @@ function ListaDeTareas() {
         const tareasActualizadas = tareas.filter(tarea => tarea.id !== id);
         setTareas(tareasActualizadas);
     }
+    //Metodo para indicar tarea completada
+    const completarTarea = id => {
+        const tareasActualizadas = tareas.map(tarea => {
+            //Actualiza la tarea por id
+            if(tarea.id === id) {
+                //Si el valor es verdadero lo convierte en falso, y viceversa
+                tarea.completada = !tarea.completada;
+            }
+            return tarea;
+        });
+        setTareas(tareasActualizadas);
+    }
 
     return(
         <>
@@ -39,6 +51,7 @@ function ListaDeTareas() {
                                 id={tarea.id}
                                 texto={tarea.texto}
                                 completada={tarea.completada}
+                                completarTarea={completarTarea}
                                 eliminarTarea={eliminarTarea}
                             />
                     )
