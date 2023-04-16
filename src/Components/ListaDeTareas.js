@@ -20,6 +20,12 @@ function ListaDeTareas() {
             setTareas(tareasActualizadas);
         }
     }
+    //Metodo para eliminar tareas por id
+    const eliminarTarea = id => {
+        //Se filtran las tareas dejando sólo las que no corresponden al id
+        const tareasActualizadas = tareas.filter(tarea => tarea.id !== id);
+        setTareas(tareasActualizadas);
+    }
 
     return(
         <>
@@ -33,6 +39,7 @@ function ListaDeTareas() {
                                 id={tarea.id}
                                 texto={tarea.texto}
                                 completada={tarea.completada}
+                                eliminarTarea={eliminarTarea}
                             />
                     )
                 }
